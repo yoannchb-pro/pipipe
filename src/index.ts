@@ -54,7 +54,7 @@ class PipelineCreator {
    * @param data
    * @returns
    */
-  async executeAsync(data: unknown) {
+  async executeAsync(data?: unknown) {
     return await this.pipes.reduce(async function (newData, currentFunction) {
       const resolved = await newData;
       return await currentFunction(resolved);
@@ -66,7 +66,7 @@ class PipelineCreator {
    * @param data
    * @returns
    */
-  execute(data: unknown) {
+  execute(data?: unknown) {
     return this.pipes.reduce(
       (newData, currentFunction) => currentFunction(newData),
       data

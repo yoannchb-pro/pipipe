@@ -61,7 +61,7 @@ declare class PipelineCreator {
      * @param data
      * @returns
      */
-    executeAsync(data: unknown): Promise<unknown>;
+    executeAsync(data?: unknown): Promise<unknown>;
     /**
      * Execute the pipeline and return the result
      * @param data
@@ -72,7 +72,7 @@ declare class PipelineCreator {
      * @param data
      * @returns
      */
-    execute(data: unknown): unknown;
+    execute(data?: unknown): unknown;
 }
 /**
  * Create a new pipeline instance
