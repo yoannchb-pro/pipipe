@@ -1,0 +1,36 @@
+{
+  "name": "pipipe",
+  "version": "1.0.0",
+  "description": "Create pipeline, execute them, modify them, copy them ...",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "node ./test/",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoannchb-pro/pipipe.git"
+  },
+  "keywords": [
+    "pipe",
+    "pipeline",
+    "create",
+    "copy",
+    "modify",
+    "async",
+    "javascript",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^18.7.5",
+    "rollup-plugin-ts": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "author": "yoannchb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoannchb-pro/pipipe/issues"
+  },
+  "homepage": "https://github.com/yoannchb-pro/pipipe#readme"
+}
