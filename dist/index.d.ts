@@ -52,6 +52,17 @@ declare class PipelineCreator {
      */
     pipe(fn: Function): this;
     /**
+     * Add a new function to a specific position to the pipeline
+     * @param fn
+     * @param position
+     */
+    /**
+     * Add a new function to a specific position to the pipeline
+     * @param fn
+     * @param position
+     */
+    pipeInsert(fn: Function, position: number): void;
+    /**
      * Execute asynchronously the pipeline and return the result
      * @param data
      * @returns

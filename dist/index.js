@@ -77,6 +77,21 @@
             return this;
         }
         /**
+         * Add a new function to a specific position to the pipeline
+         * @param fn
+         * @param position
+         */
+        pipeInsert(fn, position) {
+            const pipes = [];
+            this.pipes.forEach((pipe, index) => {
+                if (index === position) {
+                    pipes.push(fn);
+                }
+                pipes.push(pipe);
+            });
+            this.pipes = pipes;
+        }
+        /**
          * Execute asynchronously the pipeline and return the result
          * @param data
          * @returns
